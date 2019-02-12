@@ -1,24 +1,684 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sxm-a3-f2v">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--artworks-->
+        <scene sceneID="qfG-EQ-U3w">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="AvX-au-CII" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NaD-Wt-QcI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YvG-B9-4IR">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15p-ak-jh4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faq-la-AMU">
+                                                <rect key="frame" x="11" y="8" width="144" height="173"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="０"/>
+                                                <connections>
+                                                    <segue destination="o2A-dY-3ln" kind="show" id="4a9-mp-3Ge"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wza-cH-DyS">
+                                                <rect key="frame" x="162" y="9" width="240" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="2"/>
+                                                <connections>
+                                                    <segue destination="9vi-uX-ldI" kind="show" id="fE9-ZL-igY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-jp-uSc">
+                                                <rect key="frame" x="8" y="188" width="240" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="4"/>
+                                                <connections>
+                                                    <segue destination="SMd-80-tB5" kind="show" id="dlc-Wu-5cr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZz-TV-7iE">
+                                                <rect key="frame" x="256" y="183" width="146" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="3"/>
+                                                <connections>
+                                                    <segue destination="zuD-U5-dGN" kind="show" id="hVZ-cx-Myj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2Y-om-2tD">
+                                                <rect key="frame" x="9" y="361" width="146" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="6"/>
+                                                <connections>
+                                                    <segue destination="ZjX-Nr-mZA" kind="show" id="6c0-hw-zPh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70h-lU-wjf">
+                                                <rect key="frame" x="162" y="364" width="240" height="171"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="12"/>
+                                                <connections>
+                                                    <segue destination="9sp-h5-NLy" kind="show" id="SYl-fC-Qcp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS9-RC-bzv">
+                                                <rect key="frame" x="8" y="544" width="240" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="13"/>
+                                                <connections>
+                                                    <segue destination="0W6-JJ-tOf" kind="show" id="psG-kh-w9v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-rg-Dtn">
+                                                <rect key="frame" x="9" y="718" width="146" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="14"/>
+                                                <connections>
+                                                    <segue destination="88G-Ey-7tX" kind="show" id="9pf-tB-ymj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRd-t4-pwx">
+                                                <rect key="frame" x="162" y="721" width="240" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="11"/>
+                                                <connections>
+                                                    <segue destination="2VY-X2-Hqd" kind="show" id="ucB-6i-YwY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-kh-pqH">
+                                                <rect key="frame" x="256" y="539" width="146" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="8"/>
+                                                <connections>
+                                                    <segue destination="eFc-ER-A9k" kind="show" id="F4R-cd-Tvg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="tY8-w6-a5M"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="901"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="89W-jf-Kz9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="artworks" id="RyX-wr-kW9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2o-eN-Kar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="-47.282608695652179"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K9s-hS-cgk">
+            <objects>
+                <viewController id="o2A-dY-3ln" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x3S-ug-ULK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０" translatesAutoresizingMaskIntoConstraints="NO" id="MlL-Qa-anf">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-4q-j0x">
+                                <rect key="frame" x="20" y="446" width="374" height="288.33333333333331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh did this self-portrait with straw hat in the summer of 1887. It is notable for its loose, sketchy style. The painting is highly discoloured, so that the background colour has almost completely disappeared. Van Gogh made at least 27 self-portraits during this period. It was a good technical exercise and cheap, as he didn't have to pay models to pose. The material on which he painted this and some other self-portraits was also cheap, as he worked not on canvas but on board.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="it2-GK-zQv"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU7-l9-DAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2519" y="-47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QAS-4S-bEA">
+            <objects>
+                <viewController id="ZjX-Nr-mZA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KUb-hQ-d0w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="NjS-LZ-aFc">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XVh-Bh-juL">
+                                <rect key="frame" x="20" y="446" width="374" height="855"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh met the Belgian painter Eugène Boch (1855-1941) in mid-June 1888, while Boch was spending a few weeks near Arles. Around 8 July, Vincent mentioned Boch in a letter to his brother Théo: "I very much like the looks of this young man with his distinctive face, like a razor blade, and his green eyes".On 11 August, his idea began to take shape: "I should like to paint the portrait of an artist friend, a man who dreams great dreams, who works like the nightingale sings, because it is his nature to do so. This man will be blond. I would like to convey in the picture my appreciation, the love that I have for him. So I will paint him just as he is, as faithfully as I can [...].
+
+Behind his head, instead of painting the ordinary wall of this shabby appartment, I will paint infinity, I will do a simple background of the richest blue, the most intense blue that I can create, and through this simple combination of the bright head against this rich, blue background, I will obtain a mysterious effect, like a star in the depths of an azure sky".
+
+Two weeks later, Boch sat for Van Gogh. "Well, thanks to him I have at last the first sketch of this painting that I have dreamt of for so long – The Poet. He sat for me. His fine head with his green eyes stands out in my portrait against a starry sky of deep ultramarine; he wears a short, yellow jacket, a collar of unbleached linen and a colourful tie".</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d17-Fn-eYb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvS-Ch-8UL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3200" y="632"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XDK-rX-eMr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sxm-a3-f2v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xsk-0q-nwE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="p4j-1K-0zb" kind="relationship" relationship="viewControllers" id="mb8-dL-l9O"/>
+                        <segue destination="pbY-Cv-q3k" kind="relationship" relationship="viewControllers" id="jJf-4U-bIg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsu-tv-0db" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="-47.226386806596707"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TiI-5e-TpO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p4j-1K-0zb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="brush" id="7Se-Zi-CEw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hN5-7J-Smx">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AvX-au-CII" kind="relationship" relationship="rootViewController" id="YYe-1Z-GyH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTe-rV-HAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="-47.226386806596707"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nk8-r9-ViL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pbY-Cv-q3k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tube" id="bY5-kN-GwO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fm3-Uo-iTj">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efL-cC-B8b" kind="relationship" relationship="rootViewController" id="JTz-qr-VWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y27-Co-CRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3042" y="721"/>
+        </scene>
+        <!--Vincent van Gogh-->
+        <scene sceneID="tdn-JR-pT0">
+            <objects>
+                <viewController id="efL-cC-B8b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfi-mO-MJR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v89-za-p1h">
+                                <rect key="frame" x="0.0" y="64" width="414" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Why Did Van Gogh Cut Off His Own Ear?"/>
+                                <connections>
+                                    <segue destination="ou3-Nl-QY3" kind="show" id="f2D-6O-8zu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-WR-6ji">
+                                <rect key="frame" x="0.0" y="397" width="414" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="10 Things You Might Not Know About Vincent van Gogh"/>
+                                <connections>
+                                    <segue destination="vG2-a9-ogo" kind="show" id="fQP-9Q-eD2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-hY-5je">
+                                <rect key="frame" x="87" y="110" width="240" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-z9-BSM">
+                                <rect key="frame" x="36" y="456" width="342" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ple-bf-izx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vincent van Gogh" id="oFL-55-8bi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwl-Oi-ufw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1965.217391304348" y="720.6521739130435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WIR-dQ-T4K">
+            <objects>
+                <viewController id="vG2-a9-ogo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="box-eF-F1L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-jN-U91">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QUB-Wt-wYT">
+                                <rect key="frame" x="10" y="74" width="395" height="1054.6666666666667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">1. He almost never became an artist at all
+
+Imagine a world where we didn’t have the Sunflowers, or The Starry Night? This world wasn’t so far off. Originally, van Gogh planned to be a pastor and worked as a lay preacher in Borinage, Belgium. It was only on being sacked from this job that he decided that his future lay in painting. Indeed, van Gogh didn’t start painting until he was 27 years old, and he never received any formal training. 
+
+2. Inspirations from the East
+
+Van Gogh had varied inspirations, including Dutch genre painting and the realist paintings of Millet and his contemporaries, but he was particularly influenced by Japanese woodblock prints. In some cases he even made copies – albeit in his very expressive, idiosyncratic style – of prints by Hiroshige, Kesai Eisen and others.
+
+3. A new work every 36 hours
+
+4. A man of letters
+
+5. Bromances
+
+6. He was his own model
+
+7. A failure?
+
+8. He cut off his own ear following an argument with GauginGaugin
+
+9. Tragically, he took his own life
+
+10. An inspiration for centuries</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CXG-Kx-5OG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcP-2W-3KJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1965.217391304348" y="1473.913043478261"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cj9-wS-C5E">
+            <objects>
+                <viewController id="ou3-Nl-QY3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bkj-31-Jjv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="aIH-3K-bY1">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jCI-a2-oV7">
+                                <rect key="frame" x="9" y="56" width="395" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">It's the 23rd of December 1888 and we're sitting in a small house in Arles in the South of France. One of the most famous artists of all time — Vincent Van Gogh — feverishly cuts off his own ear in a mysterious act of self-mutilation.
+
+This is one of the most famous moments in art history... but why did he do it? 
+
+The circumstances in which Van Gogh cut off his ear are not exactly known, but many experts believe that it was following a furious row with Gaugin at the Yellow House.
+
+Afterwards, Van Gogh allegedly packaged up his removed ear and gave it to a prostitute in a nearby brothel. He was then admitted to a hospital in Arles.
+
+Van Gogh's physical and mental health would continue to deteriorate, and the following year he would tragically take his own life.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ufx-sI-hcz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjX-6t-anM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033.3333333333335" y="720.6521739130435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3aS-Xf-Sme">
+            <objects>
+                <viewController id="9vi-uX-ldI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Brm-5W-WBc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2RE-r3-IIe">
+                                <rect key="frame" x="24" y="385" width="374" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh's night sky is a field of roiling energy. Below the exploding stars, the village is a place of quiet order. Connecting earth and sky is the flamelike cypress, a tree traditionally associated with graveyards and mourning. But death was not ominous for van Gogh. "Looking at the stars always makes me dream," he said, "Why, I ask myself, shouldn't the shining dots of the sky be as accessible as the black dots on the map of France? Just as we take the train to get to Tarascon or Rouen, we take death to reach a star."
+
+The artist wrote of his experience to his brother Theo: "This morning I saw the country from my window a long time before sunrise, with nothing but the morning star, which looked very big." This morning star, or Venus, may be the large white star just left of center in The Starry Night. The hamlet, on the other hand, is invented, and the church spire evokes van Gogh's native land, the Netherlands. The painting, like its daytime companion, The Olive Trees, is rooted in imagination and memory. Leaving behind the Impressionist doctrine of truth to nature in favor of restless feeling and intense color, as in this highly charged picture, van Gogh made his work a touchstone for all subsequent Expressionist painting.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-9A-wfH">
+                                <rect key="frame" x="24" y="94" width="370" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C8J-nl-gXV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwO-8w-Mqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="721"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Odu-JD-WTc">
+            <objects>
+                <viewController id="SMd-80-tB5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GY1-DT-730">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5rd-aF-A7E">
+                                <rect key="frame" x="24" y="385.00000000000011" width="374" height="129.66666666666666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Wheatfield with crows is one of Van Gogh’s most famous paintings and probably the one most subject to speculation. It was executed in July 1890, in the last weeks of Van Gogh’s life.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-Ij-aeD">
+                                <rect key="frame" x="24" y="94" width="370" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="4"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eKD-aZ-nKZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaV-WT-tt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445" y="668"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nR3-gb-GGh">
+            <objects>
+                <viewController id="2VY-X2-Hqd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmF-rV-Re6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BVQ-SO-Q7a">
+                                <rect key="frame" x="24" y="385.00000000000011" width="374" height="220.33333333333334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh painted the foreground of this view of Montmartre with a fine brush, while the sky in the background he produced with broad brushstrokes. In Paris, Van Gogh frequently painted the picturesque windmills on the hill of Montmartre. In his day, Montmartre was still a partly rural area with allotment gardens and farms.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHp-qM-MZY">
+                                <rect key="frame" x="24" y="94" width="370" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="11"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nNQ-9Y-weU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gU-d1-ByK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3893" y="-47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ots-ji-QzL">
+            <objects>
+                <viewController id="zuD-U5-dGN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2no-Kp-QPl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="wUm-bD-HI0">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xiQ-JG-eLu">
+                                <rect key="frame" x="20" y="446" width="374" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh’s paintings of Sunflowers are among his most famous. He did them in Arles, in the south of France, in 1888 and 1889. Vincent painted a total of five large canvases with sunflowers in a vase, with three shades of yellow ‘and nothing else’. In this way, he demonstrated that it was possible to create an image with numerous variations of a single colour, without any loss of eloquence.
+The sunflower paintings had a special significance for Van Gogh: they communicated ‘gratitude’, he wrote. He hung the first two in the room of his friend, the painter Paul Gauguin, who came to live with him for a while in the Yellow House. Gauguin was impressed by the sunflowers, which he thought were ‘completely Vincent’. Van Gogh had already painted a new version during his friend’s stay and Gauguin later asked for one as a gift, which Vincent was reluctant to give him. He later produced two loose copies, however, one of which is now in the Van Gogh Museum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3j2-nR-d8M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uu-6Y-38o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3201" y="-47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="baQ-RL-Ngy">
+            <objects>
+                <viewController id="9sp-h5-NLy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dA4-Cw-VlJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-pM-TeM">
+                                <rect key="frame" x="24" y="385" width="374" height="379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">This sunny park view is one of the largest canvases Vincent van Gogh ever produced in Paris. Inspired by the dots used by Pointillists, Van Gogh instead employed loose little paint stripes. He applied the paint in different directions and thicknesses, whereby each element—the air, vegetation and the figures—acquires its own particular texture. This helped him to create the effect of a radiant spring day, which fit the sense of intimacy and togetherness he wished to express.
+
+Van Gogh himself called this work 'The garden with lovers'.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-mH-fFZ">
+                                <rect key="frame" x="24" y="94" width="370" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="12"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ka7-U8-RnI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWC-H6-cxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="1404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jiR-I0-6zs">
+            <objects>
+                <viewController id="0W6-JJ-tOf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bpK-QR-rin">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rEd-w8-86K">
+                                <rect key="frame" x="24" y="385" width="374" height="333.66666666666669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh painted this vibrant seascape outdoors. In fast, loose brushstrokes he tried to capture the colour of the sea. He described it as 'a colour like mackerel, in other words, changing — you don't always know if it's green or purple — you don't always know if it's blue — because a second later, its changing reflection has taken on a pink or grey hue.' (See letter to Theo van Gogh, 3/4 June 1888)
+
+In the paint layer of this work are grains of sand that got in there during painting in the open-air.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx2-sd-i0U">
+                                <rect key="frame" x="24" y="94" width="370" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="13"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DjX-do-iqI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayk-KJ-eSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445" y="1357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CUt-OX-Y50">
+            <objects>
+                <viewController id="t9f-IH-nMO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Oa-f8-qMa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-79-JSp">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-Qj-u8l">
+                                <rect key="frame" x="20" y="446" width="374" height="764.33333333333337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Inseparably entwined with the last period of Vincent van Gogh's life in Auvers, Dr Gachet was an original character. He was a homoeopathic doctor interested in chiromancy but his real passion lay with the arts. An accomplished engraver himself, he kept in touch with many different artists including Manet, Monet, Renoir and Cézanne. It was therefore logical for Van Gogh to go to him, on the advice of his brother Theo, when he was discharged from hospital in Saint-Rémy-de-Provence.
+
+Specialised in psychiatry, the doctor did his best to help Vincent overcome his anguish while affording him the material comfort conducive to his well-being.
+
+The portrait of the doctor was painted during this particularly intense creative phase. He was no ordinary model and is portrayed in a melancholy pose reflecting "the desolate expression of our time," as Van Gogh wrote. The only touch of hope in this severe portrait brushed in cold colours is the foxglove which brings a little comfort and relief through its curative properties.
+
+Despite his devotion, Dr Gachet was unable to prevent Van Gogh's irremediable gesture; the artist committed suicide shortly afterwards.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yxV-yJ-NNu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VN7-Br-qmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="-770"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5PY-Sa-3xn">
+            <objects>
+                <viewController id="eFc-ER-A9k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfB-Mh-Qcg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jhf-gp-e8T">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZsA-uV-fek">
+                                <rect key="frame" x="20" y="446" width="374" height="764.33333333333337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Inseparably entwined with the last period of Vincent van Gogh's life in Auvers, Dr Gachet was an original character. He was a homoeopathic doctor interested in chiromancy but his real passion lay with the arts. An accomplished engraver himself, he kept in touch with many different artists including Manet, Monet, Renoir and Cézanne. It was therefore logical for Van Gogh to go to him, on the advice of his brother Theo, when he was discharged from hospital in Saint-Rémy-de-Provence.
+
+Specialised in psychiatry, the doctor did his best to help Vincent overcome his anguish while affording him the material comfort conducive to his well-being.
+
+The portrait of the doctor was painted during this particularly intense creative phase. He was no ordinary model and is portrayed in a melancholy pose reflecting "the desolate expression of our time," as Van Gogh wrote. The only touch of hope in this severe portrait brushed in cold colours is the foxglove which brings a little comfort and relief through its curative properties.
+
+Despite his devotion, Dr Gachet was unable to prevent Van Gogh's irremediable gesture; the artist committed suicide shortly afterwards.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pdr-TI-TmC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eub-bB-Jwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="-770"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WGL-pN-yeE">
+            <objects>
+                <viewController id="88G-Ey-7tX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="62v-cF-z9r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="14" translatesAutoresizingMaskIntoConstraints="NO" id="roo-Sf-fOV">
+                                <rect key="frame" x="60" y="77" width="295" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dej-CO-k7e">
+                                <rect key="frame" x="20" y="446.00000000000011" width="374" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Van Gogh painted this chair as a kind of portrait of his colleague Paul Gauguin during the time he stayed with him in Arles in the south of France. Van Gogh later wrote: 'It is a study of his armchair of dark, red-brown wood, the seat of greenish straw, and in the absent person's place a lighted candlestick and some modern novels.' (See letter to Albert Aurier, 9/10 February 1890). Van Gogh also painted his own chair. Due to their stubborn characters, the cooperation between the two painters was short-lived.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S2K-zV-Se4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5p-8B-1kE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3981" y="-770"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="357.83999633789062" height="443.760009765625"/>
+        <image name="11" width="878" height="476"/>
+        <image name="12" width="718" height="485"/>
+        <image name="13" width="621" height="475"/>
+        <image name="14" width="388" height="485"/>
+        <image name="2" width="823" height="648"/>
+        <image name="3" width="492" height="651"/>
+        <image name="4" width="1010" height="477"/>
+        <image name="6" width="413" height="585"/>
+        <image name="8" width="481" height="580"/>
+        <image name="brush" width="24" height="24"/>
+        <image name="d" width="312" height="484"/>
+        <image name="tube" width="24" height="24"/>
+        <image name="０" width="471" height="583"/>
+    </resources>
 </document>
